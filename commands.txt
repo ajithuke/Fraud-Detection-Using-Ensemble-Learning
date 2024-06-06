@@ -1,0 +1,1 @@
+python -u "c:\Users\Ajit\Documents\Fraud Detection\transact\app.py"

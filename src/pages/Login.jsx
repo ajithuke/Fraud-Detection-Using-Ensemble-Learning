@@ -28,7 +28,7 @@ const LoginPage = () => {
         }).catch((error) => { alert("please create account") })
     }
 
-    const handleClick = ()=>{
+    const handleClick = () => {
         navigate("/signup");
     }
 

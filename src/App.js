@@ -1,11 +1,20 @@
 import './App.css';
-import PredictionForm from './components/Prediction';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Home';
+import LoginPage from './pages/Login';
+import RegisterPage from './pages/Signup';
+import MyNavbar from './components/MyNavbar';
 
 function App() {
     return (
-        <div className="App">
-            <h1>Prediction App</h1>
-            <PredictionForm />
+        <div>
+            <MyNavbar />
+            <Routes>
+                <Route path='/' element={<HomePage />} />
+                <Route path='/login' element={<LoginPage />} />
+                <Route path='/signup' element={<RegisterPage />} />
+            </Routes>
         </div>
     );
 }

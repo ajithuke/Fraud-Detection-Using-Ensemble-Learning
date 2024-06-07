@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Button, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const PredictionForm = () => {
+
+    const navigate = useNavigate();
+
     const [prediction, setPrediction] = useState(null);
     const [error, setError] = useState('');
 
@@ -106,7 +110,7 @@ const PredictionForm = () => {
             </Form>
 
             <br />
-            {error ? <p style={{ color: 'red' }}>{error}</p> : prediction !== null && <h3>Transaction is {prediction ? 'Fraud' : 'Legit'} </h3>}
+            {error ? <p style={{ color: 'red' }}>{error}</p> : prediction !== null && <h3>{prediction ? navigate("/result") : 'Legit'} </h3>}
 
         </div>
     );

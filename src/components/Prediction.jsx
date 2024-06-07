@@ -12,9 +12,9 @@ const PredictionForm = () => {
         try {
             const response = await axios.post('http://127.0.0.1:5000/predict', { feature: input });
             setPrediction(response.data.prediction);
-            setError(''); // Clear any previous errors
+            setError('');
         } catch (error) {
-            setError('There was an error!'); // Set an error message
+            setError('There was an error!');
             console.error('There was an error!', error);
         }
     };

@@ -1,0 +1,25 @@
+/* src/HomePage.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://media.istockphoto.com/id/1203763961/photo/stacked-credit-cards.webp?b=1&s=612x612&w=0&k=20&c=GgTHg1ahYEsxQh-S5dx_1K_tSeX8Rn8GZJo-ZdhWU_E='); /* Replace with your Google image URL */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Set default text color to white */
+  }
+  
+  .container {
+     /* Slightly transparent black background to enhance readability */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white; /* Ensure text color inside the container is white */
+  }
+  
+  .center {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  

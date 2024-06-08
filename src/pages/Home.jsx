@@ -15,7 +15,7 @@ const HomePage = () => {
     },[firebase,navigate])
 
     return (
-        <div className="container">
+        <div className="container pred-container">
             <h1 className="center">Fraud Detection App</h1>
             <PredictionForm />
         </div>

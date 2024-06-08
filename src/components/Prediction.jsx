@@ -32,7 +32,7 @@ const PredictionForm = () => {
     };
 
     return (
-        <div className='container'>
+        <div className='container text-color mt-5'>
             <Form onSubmit={handleSubmit}>
 
                 <Form.Group className="mb-3">

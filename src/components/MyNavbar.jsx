@@ -14,7 +14,7 @@ const MyNavbar = () => {
                     <Nav className="justify-content-end">
                         <Row>
                             <Col className="xs-auto">
-                                <Button onClick={firebase.logout}>Logout</Button>
+                                <Button variant="secondary" onClick={firebase.logout}>Logout</Button>
                             </Col>
                         </Row>
                     </Nav>

@@ -28,8 +28,8 @@ const RegisterPage = ()=>{
     }
 
     return (
-        <div className="container">
-            <h1 className="register center">Sign Up Page</h1>
+        <div className="container text-color">
+            <h1 className="register center ">Sign Up Page</h1>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -51,7 +51,7 @@ const RegisterPage = ()=>{
                     />
                 </Form.Group>
       
-                <Button variant="primary" type="submit">
+                <Button variant="success" type="submit">
                     Sign Up
                 </Button>
             </Form>

@@ -22,19 +22,14 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         await firebase.logInUser(email, password).then((obj) => {
-            console.log("success")
             setEmail("")
             setPassword("")
         }).catch((error) => { alert("please create account") })
     }
 
-    const handleClick = () => {
-        navigate("/signup");
-    }
-
     return (
-        <div className="container">
-            <h1 className="login center">Login Page</h1>
+        <div className="container custom-container mt-10">
+            <h1 className="center mb-5 mt-5">Login Page</h1>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -59,10 +54,12 @@ const LoginPage = () => {
                 <Button variant="primary" type="submit">
                     Log In
                 </Button>
-                <h2 className="mt-4 mb-4">OR</h2>
+                <h5 className="mt-4 mb-4">OR</h5>
                 <Button onClick={firebase.signInWithGoogle} variant="success">Sign in With Google</Button>
                 <br></br>
-                <Button className="mt-5" onClick={handleClick}>Sign up</Button>
+                <div className="mt-3 last">
+                    {"Not a member "} <a href="/signup">Sign up</a>
+                </div>
             </Form>
         </div>
     )

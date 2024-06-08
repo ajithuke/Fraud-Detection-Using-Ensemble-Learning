@@ -1,7 +1,44 @@
 .center {
-  text-align: center;
+    text-align: center;
 }
 
-.border{
+.border {
     border: solid black 2px;
+}
+
+.custom-container {
+    max-width: 400px !important;
+    margin: 0 auto !important;
+    width: 35rem;
+    color: whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.pred-container{
+    max-width: 500px !important;
+    margin: 0 auto !important;
+}
+
+.border-container {
+    border: solid black 1px;
+    color: white;
+}
+
+.text-color{
+    color: white;
+}
+
+body {
+    font-family: Arial;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #159957);
+    color: whitesmoke;
+}
+
+.last{
+    padding: 20px;
 }
